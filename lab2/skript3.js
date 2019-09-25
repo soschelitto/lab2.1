@@ -1,10 +1,14 @@
-let X = parseInt(prompt("Введите число"));
-let Y = parseInt(prompt("Введите второе число"));
-let R8 = confirm("Выполнить сложение");
-if ((R8 === true)) {
-alert (X + Y);
+let X = prompt("Введите число", "");
+let Y = prompt("Введите число", "");
+let Z = prompt("Введите число", "");
+if (X===Y || Y===Z || Z===X)
+alert ("есть два одинаковых числа")
+else if (X>Y && X>Z) {
+alert ("X наибольшее число");
+}
+else if(Y>X && Y>Z) {
+alert ("Y наибольшее число");
 }
 else {
-alert ("error");
-
+alert ("Z наибольшее число");
 }
